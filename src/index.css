@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+#hero,
+#vision,
+#missions,
+#impact,
+#leadership {
+  scroll-margin-top: 5rem;
+}
